@@ -1,0 +1,356 @@
+/* IMPORTAR FUENTE DE LETRA */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+.nav-link {
+  color: rgba(255, 255, 255, 0.7) !important; /* Color original */
+}
+
+.nav-link:hover {
+  color: #00bfff !important; /* Color celeste */
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.noticias {
+  width: 100%;
+  margin: 15px 0;
+  padding: 15px;
+}
+.noticias h1 {
+  font-size: 21px;
+  color: 	rgb(0, 186, 199);
+  text-align: justify;
+}
+.noticias p {
+  font-size: 18px;
+  text-align: justify;
+}
+button {
+  background-color: rgb(3, 79, 12);
+  color: white;
+  padding: 5px;
+  width: 100px;
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  background-color: 		#222;
+  height: 100px;
+}
+footer a {
+  color: 	rgb(3, 151, 242);
+}
+.link-hover {
+  color: #6c757d; /* Color original (text-muted) */
+  text-decoration: none;
+}
+
+.link-hover:hover {
+  color: #00bfff; /* Color celeste */
+}
+.btn-primary {
+  border: solid 1px 	hsl(203, 100%, 26%);
+  background-color: 	hsl(203, 100%, 37%);
+}
+
+.btn-primary:focus,
+.btn-primary:hover {
+  box-shadow: none;
+  border: solid 1px 	hsl(203, 100%, 37%);
+  background-color: 	hsl(203, 100%, 26%);
+}
+.video-container {
+  position: relative;
+  width: 80%; /* El video ocupará el 80% del ancho de la pantalla */
+  padding-bottom: 45%; /* Mantiene la relación de aspecto 16:9 */
+  height: 0;
+  margin: 0 auto; /* Centra el contenedor del video */
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.icon-white svg {
+  color: white;
+  fill: white;
+}
+
+/* ABAJO SON CLASES PARA CARTA */
+.cajacarta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Para que sea responsive */
+  gap: 20px; /* Espacio entre la carta y el texto */
+  padding: 20px; /* Espacio alrededor del contenedor */
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  perspective: 1000px;
+  border: 0px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.front, .back {
+  transform: skew(0deg, 355deg); /* Girar el contenido para que se vea normal */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  color: #03446A;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  padding: 10px; /* Añadir padding para espacio alrededor del texto */
+  overflow: auto; /* Permitir scroll si el contenido es demasiado grande */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.2; /* Reducir el line-height para menos espacio vertical */
+}
+
+.back {
+  background: #0075BD;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.back p {
+  color: aliceblue;
+}
+.cartatitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cartadesc {
+  font-size: 18px;
+}
+
+.imglogo {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  border-radius: 5px;
+}
+
+/* CLASES FONDO SEPARADOR, SOURCE: https://codepen.io/mustafauncuoglu/pen/yLWjBoJ  */
+body {
+  background: #222;
+  color: #FFF;
+  font-family: 'Nunito', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.skewed-bg {
+  background: white;
+  padding: 50px 0;
+  transform: skew(0deg, -5deg);
+  margin-top: -55px;
+}
+
+.skewed-bg .content {
+  transform: skew(0deg, 5deg);
+  text-align: center;
+}
+
+.skewed-bg .content .title {
+  padding-top: 100px;
+  font-weight: 900;
+}
+
+.skewed-bg .content .text {
+  width: 60%;
+  margin: 15px auto;
+  color: #ccfff2;
+}
+/* CLASES TEXTO A LA DERECHA DE LA CARTA */
+.textodercarta {
+  padding-top: 2rem;
+  max-width: 300px; /* Ajustar el ancho máximo del contenedor de texto */
+  text-align: Center; /* Alinear el texto a la izquierda */
+}
+
+.titulotxt {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #03446A;
+}
+
+.descripciontxt {
+  font-size: 18px;
+  color: #03446A;
+}
+
+/* Estilos para las diapositivas con transición crossfade */
+#crossfade-container {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Ajusta la altura según sea necesario */
+  overflow: hidden;
+}
+
+.crossfade-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.commentreddit {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  border-radius: 5px;
+
+}
+
+.crossfade-slide.active {
+  opacity: 1;
+}
+
+/* CLASES PARA LISTA SI O NO */
+.list-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los elementos a la derecha */
+}
+.list-group-item {
+      width: 50%; /* Ajusta el ancho según sea necesario */
+      margin-bottom: 1rem; /* Espaciado entre los elementos */
+      background-color: hsl(203, 100%, 37%);
+      color: white;
+      text-align: center; /* Centrar el texto horizontalmente */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centrar el texto verticalmente */
+      align-items: center; /* Centrar el texto horizontalmente */
+      border-radius: 5px;
+    }
+.list-group-item.active {
+  background-color: hsl(203, 100%, 30%); /* Color para el elemento activo */
+}
+/* CLASE BOTÓN PARA VOLVER ARRIBA */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#backToTop:hover {
+  transform: scale(1.2);
+  background-color: #0056b3;
+}
+
+#backToTop i {
+  font-size: 30px;
+}
+/* Media Queries para que sea responsive */
+@media (max-width: 1000px) {
+  .commentreddit {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+      width: 70%;
+  }
+  .front, .back {
+      line-height: 1.2; /* Ajustar line-height para pantallas más pequeñas */
+  }
+  .textodercarta {
+      max-width: 100%; /* Ajustar el ancho máximo del contenedor de texto */
+  }
+  .commentreddit {
+    width: 100%;
+  
+  }
+  .list-group-item {
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .video-container {
+    width: 90%; /* Ajusta el ancho del video al 90% en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+      width: 100%;
+  }
+  .front, .back {
+      line-height: 1.2; /* Ajustar line-height para pantallas más pequeñas */
+  }
+  .textodercarta {
+      max-width: 100%; /* Ajustar el ancho máximo del contenedor de texto */
+  }
+  .commentreddit {
+    width: 100%;
+  
+  }
+  .video-container {
+    width: 100%; /* Ajusta el ancho del video al 100% en pantallas muy pequeñas */
+  }
+}
+
+@media (min-width: 1100px) {
+  .commentreddit {
+    width: 60%;
+  
+  }
+}

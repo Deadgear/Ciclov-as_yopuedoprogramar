@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- llamo al archivo CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- llamo al archivo de fuente para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- llamo al archivo de CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- llamo al archivo de JavaScript -->
+    <script defer src="./main.js"></script>
+    
+  <title>Ciclovías</title>
+</head>
+
+<body>
+  <!-- contenedor para el encabezado de la pagina, source:  -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#0065A3" id="inicio">
+    <div class="container-fluid my-container-fluid">
+        <a class="navbar-brand fw-bold d-lg-none" href="#"><b style="
+          color: white;
+      ">CICLOVÍAS</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <a class="navbar-brand fw-bold d-none d-lg-block" href="#inicio" style="color: #ffffff">
+                  <img src="./imagenes/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""><b style="color: white; padding: 15px;">CICLOVÍAS</b></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#objetivo">¿Qué es?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#opiniones">Opiniones</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#si">Sí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#no">No</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <!-- contenedor para poner una carrusel de bootstrap -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./imagenes/carrusel/main.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./imagenes/carrusel/main2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./imagenes/carrusel/main3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ 
+           <!-- Fondo de pantalla separados, source: https://codepen.io/mustafauncuoglu/pen/yLWjBoJ  -->
+           <div class="skewed-bg" id="objetivo">
+            <div class="content">
+                          <!-- OBJETO DE CARTA source: https://codepen.io/edeesims/pen/wvpYWW -->
+             <div class="container my-5">
+              <div class="row justify-content-center">
+                  <div class="col-12 col-md-6 col-lg-4">
+                      <div class="card">
+                          <div class="content">
+                              <div class="front">
+                                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNlXZ0HntoZuHsESsCCrKV3mj9TwyYtwNM2A&s" alt="Italian Trulli" class="imglogo">
+                              </div>
+                              <div class="back">
+                                <h1 class="cartatitle"><b>¿QUÉ SIGNIFICA ESTA SEÑAL?</b></h1>
+                                  <h2 class="cartadesc">Esta señal obliga a los ciclistas a circular por la ciclovía y prohíbe el paso a otros vehículos. No cumplir con esta norma puede resultar en una sanción económica. Cuando la señal aparece tachada, indica el fin de la vía reservada para ciclistas</h2>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="textodercarta">
+                    <h1 class="titulotxt" ><b>¿Qué es una ciclovía?</b></h1>
+                    <h3 class="descripciontxt">Una ciclovía es un espacio en las calles y avenidas destinado exclusivamente para los ciclistas. La finalidad es que puedan circular de forma segura en todo momento del día y noche, sin preocuparse de que motos, automóviles o hasta peatones invadan estos tramos.</h3>
+                </div>
+              </div>
+          </div>
+          <!-- CIERRE OBJETO CARTA -->
+            </div>
+          </div>
+          <!-- CIERRE FONDO SEPARADO -->
+             <!-- Contenedor para los comentarios de reddit -->
+    <div class="container my-5" id="opiniones">
+      <div id="crossfade-container" class="position-relative">
+        <div class="crossfade-slide active row" style="padding: 50px; justify-content: center;">
+          <h2><b>¿QUÉ OPINA LA GENTE DE URUGUAY?</b></h2>
+          <p>(comentarios de reddit r/Uruguay)</p>
+        </div>
+        <div class="crossfade-slide">
+          <img src="./imagenes/reddit commentarios/comment 2.png" alt="'Por que hay que elegir o entre la bici o el auto, por la plata que pago deberia tener las dos posibilidades, si no ando con ganas de mojarme en la lluvia o transpirar en verano y garro el auto porque no puedo llegar hasta la puerta de mi trabajo o cerca desde mi casa ida y vuelta ?
+
+          Lo mismo si quiero ir en bici, porque deberia peligrar mi vida si decido subirme a la bici para ir a laburar ?
+          
+          No coman del tupper, poniendose de un lado o de otro, no hay porque precarizarse y andar solo en bici, los autos son tremenda herramienta, no hay porque no usarlos, ahora hasta electricos tenes.'" class="commentreddit">
+        </div>
+        <div class="crossfade-slide">
+          <img src="./imagenes/reddit commentarios/comment 1.png" alt="'La ciclovía como concepto es necesaria y la banco a muerte. La de 18 de Julio me parece un mamarracho. Pero yo no soy ingeniero en vialidad ni urbanísta así q mi opinión no cuenta.'" class="commentreddit">
+        </div>
+        <div class="crossfade-slide">
+          <img src="./imagenes/reddit commentarios/comment 3.png" alt="'La ciclovía como concepto es necesaria y la banco a muerte. La de 18 de Julio me parece un mamarracho. Pero yo no soy ingeniero en vialidad ni urbanísta así q mi opinión no cuenta.'" class="commentreddit">
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-3">
+        <button class="btn btn-primary mx-2" onclick="showSlide(0)"><b>1</b></button>
+        <button class="btn btn-primary mx-2" onclick="showSlide(1)"><b>2</b></button>
+        <button class="btn btn-primary mx-2" onclick="showSlide(2)"><b>3</b></button>
+        <button class="btn btn-primary mx-2" onclick="showSlide(3)"><b>4</b></button>
+      </div>
+    </div>
+
+<!-- VIDEO YOUTUBE -->
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-12 d-flex justify-content-center">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/RqN89e-OUKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- SI Fondo de pantalla separados SI, source: https://codepen.io/mustafauncuoglu/pen/yLWjBoJ  -->
+              <div class="skewed-bg" style="margin-top: 6rem;" id="si">
+                <div class="content">
+               <!-- FORM DE PORQUE SI -->
+                  <div class="container mt-5">
+                      <div class="list-group">
+                        <H2 style="color: hsl(203, 100%, 30%); padding-bottom: 3rem;"><b>¿PORQUÉ DEBERIAN IMPLEMENTARSE MÁS CICLOVÍAS EN EL PAÍS?</b></H2>
+                        <a class="list-group-item active" style="margin-left: 14rem;">
+                         <h4 class="list-group-item-heading"><b>MEJORA LA SALUD PÚBLICA</b></h4>
+                          <p class="list-group-item-text">Fomenta el ejercicio físico regular, reduciendo enfermedades relacionadas con el sedentarismo y mejorando la salud general de la población.</p>
+                         </a>
+                         <a class="list-group-item active" style="margin-left: 10rem;">
+                           <h4 class="list-group-item-heading"><b>REDUCCIÓN DE LA CONTAMINACIÓN</b></h4>
+                            <p class="list-group-item-text">Disminuye la dependencia de vehículos motorizados, reduciendo las emisiones de gases contaminantes y mejorando la calidad del aire.</p>
+                          </a>
+                           <a class="list-group-item active"  style="margin-left: 5rem;">
+                              <h4 class="list-group-item-heading"><b>MOVILIDAD SOSTENIBLE</b></h4>
+                               <p class="list-group-item-text">Ofrece una alternativa de transporte eficiente y económica, aliviando el tráfico vehicular y promoviendo un desarrollo urbano más sostenible.</p>
+                              </a>
+                       </div>
+                    </div>
+                    <!-- CIERRE LISTA -->
+                </div>
+              </div>
+<!-- CIERRE FONDO SEPARADO -->
+<!-- NO Fondo de pantalla separados NO, source: https://codepen.io/mustafauncuoglu/pen/yLWjBoJ  -->
+              <div class="skewed-bg" style="margin-top: 0rem; background-color: hsl(203, 100%, 30%); " id="no">
+                <div class="content">
+               <!-- FORM DE PORQUE NO -->
+                  <div class="container mt-5">
+                      <div class="list-group" style="align-items: flex-end;">
+                        <H2 style="color: white; padding-bottom: 3rem; margin-right: 2rem;"><b>PRINCIPALES QUEJAS DE PERSONAS SOBRE LAS CICLOVÍAS</b></H2>
+                        <a class="list-group-item active" style="margin-right: 14rem; background-color: white; color: hsl(203, 100%, 30%);">
+                         <h4 class="list-group-item-heading"><b>REDUCCIÓN DEL ESPACIO PARA VEHÍCULOS</b></h4>
+                          <p class="list-group-item-text">La implementación de ciclovías puede reducir el espacio disponible para los vehículos motorizados, lo que podría aumentar la congestión del tráfico en áreas urbanas ya saturadas.</p>
+                         </a>
+                         <a class="list-group-item active"  style="margin-right: 10rem; background-color: white; color: hsl(203, 100%, 30%);">
+                           <h4 class="list-group-item-heading"><b>COSTOS DE IMPLEMENTACIÓN Y MANTENIMIENTO</b></h4>
+                            <p class="list-group-item-text"> La construcción y el mantenimiento de ciclovías pueden ser costosos. Algunos ciudadanos consideran que estos recursos podrían ser mejor utilizados en otras infraestructuras o servicios públicos.</p>
+                          </a>
+                           <a class="list-group-item active"  style="margin-right: 5rem; background-color: white; color: hsl(203, 100%, 30%);">
+                              <h4 class="list-group-item-heading"><b>BAJA UTILIZACIÓN</b></h4>
+                               <p class="list-group-item-text">En algunas áreas, la demanda de ciclovías puede ser baja debido a factores como el clima, la topografía o la cultura local. Esto puede llevar a la percepción de que las ciclovías no son una inversión eficiente si no son ampliamente utilizadas.</p>
+                              </a>
+                       </div>
+                    </div>
+                    <!-- CIERRE LISTA -->
+                </div>
+              </div>
+<!-- CIERRE FONDO SEPARADO -->
+ <!-- INFORMACION DE WEB -->
+ <div class="container mt-5" style="margin-top: 7rem !important;   text-align: center;">
+  <div class="row">
+      <div class="col-md-8 offset-md-2">
+          <div class="card custom-card" style="
+          max-width: 600px;">
+              <div class="card-body" style="background: #222;">
+                  <h1 class="card-title">Proposito de la web</h1>
+                  <p class="card-text">
+                    Esta web tiene como propósito informar y ofrecer opiniones fundamentadas en lo que expresan las personas y los medios de comunicación. Nuestro objetivo es proporcionar información precisa y opiniones para nuestros usuarios. Además, aspiramos a persuadir a la comunidad sobre los beneficios de las ciclovías y la necesidad de incrementar su número.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+    <!-- Botón para volver arriba -->
+    <button id="backToTop" class="btn">
+      <i class="bi bi-caret-up-fill"></i>
+    </button>
+  <!-- footer es el pie de pagina -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="#inicio" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img src="./imagenes/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <span class="text-muted">©2024 creado y estilizado por Kevin Diaz para el proyecto final de Yo Puedo Programar</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class=" link-hover" href="#inicio">Inicio</a></li>
+            <li class="ms-3"><a class=" link-hover" href="#opiniones">Opiniones</a></li>
+            <li class="ms-3"><a class=" link-hover" href="#si">Sí</a></li>
+        </ul>
+    </footer>
+</div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+
+</html>
