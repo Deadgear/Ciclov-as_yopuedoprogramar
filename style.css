@@ -273,7 +273,7 @@ body {
 /* CLASE BOTÓN PARA VOLVER ARRIBA */
 #backToTop {
   position: fixed;
-  bottom: 20px;
+  bottom: 95px;
   right: 20px;
   display: none;
   width: 60px;
@@ -327,6 +327,9 @@ body {
   .video-container {
     width: 90%; /* Ajusta el ancho del video al 90% en pantallas más pequeñas */
   }
+  .quejas {
+    margin-right: 1rem !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -352,5 +355,13 @@ body {
   .commentreddit {
     width: 60%;
   
+  }
+  .quejas {
+    margin-right: 5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .quejas {
+    margin-right: 13rem !important;
   }
 }
